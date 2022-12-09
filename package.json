@@ -1,0 +1,19 @@
+{
+  "name": "userlist",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^6.4.1",
+    "dotenv": "^16.0.3",
+    "firebase": "^9.15.0",
+    "firebase-admin": "^11.3.0"
+  }
+}
