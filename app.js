@@ -3,7 +3,12 @@ import { initializeApp, applicationDefault } from 'firebase-admin/app';
 
 import { getAuth } from "firebase-admin/auth";
 
-let projectID = 'PROJECT_ID HERE';
+// linux
+// export GOOGLE_APPLICATION_CREDENTIALS="/home/user/Downloads/service-account-file.json"
+// windows
+// $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"
+
+let projectID = process.env.PROJECT_ID;
 
 initializeApp({
     credential: applicationDefault(),
